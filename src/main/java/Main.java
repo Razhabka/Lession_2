@@ -25,7 +25,7 @@ public class Main {
         int a = 23;
         int b = 78;
 
-        if(a+b >= 0){
+        if(a + b >= 0){
             System.out.println("Сумма положительная");
         }else {
             System.out.println("Сумма отрицательная");
