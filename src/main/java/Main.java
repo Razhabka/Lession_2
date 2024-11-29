@@ -175,20 +175,15 @@ public class Main {
     public static void lst04(){
 
         System.out.println("Задание №13");
-        int[][] arr = new int[3][3];
-        /*
-        {{0,0,0,}
-         {0,0,0,}
-         {0,0,0,}}
-         */
+        int size = 7;
+        int[][] arr = new int[size][size];
 
-        for(int i = 0; i < arr.length; i++){
-            for(int j = 0; j < arr[i].length; j++){
-                if((i == 0 && j == 0) || (i == 1 && j == 1) || (i == 2 && j == 2) || (i == 0 && j == 2) || (i == 2 && j == 0)){
-                    arr[i][j] = 1;
-                }
-            }
+        for (int i = 0; i < size; i++){
+            arr[i][i] = 1;
+            arr[i][size - 1 - i] = 1;
         }
+
+
         for(int i = 0; i < arr.length; i++){
             System.out.println(Arrays.toString(arr[i]));
         }
