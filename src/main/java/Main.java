@@ -183,7 +183,6 @@ public class Main {
             arr[i][size - 1 - i] = 1;
         }
 
-
         for(int i = 0; i < arr.length; i++){
             System.out.println(Arrays.toString(arr[i]));
         }
