@@ -16,7 +16,7 @@ public class Park {
 
     public class FerrisWheel{
         private String ferrisWheelWorkTime = "8:00AM - 5:00PM";
-        private String ferrisWheelDescription = "The most popular entertainment among adults and children visiting our amusement park is shooting range.";
+        private String ferrisWheelDescription = "A mechanical attraction in the form of a large vertically mounted wheel, with passenger cabins attached to the rim. Ferris wheels are available in many amusement parks and other places.Ы";
         private String ferrisWheelPrice = "5$";
 
 
