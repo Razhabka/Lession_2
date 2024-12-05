@@ -10,10 +10,6 @@ public class Main {
         employeesList[3] = new Employee("Malov", "Evgeniy", "Nikolaevich", "QA Engineer", "EvgeniyQA@gmail.com", 880055535, 30,27);
         employeesList[4] = new Employee("Sverchkov", "Egor", "Aleksandrovich", "Developer", "EgorDev@gmail.com", 880055535, 30,32);
 
-        Park park1 = new Park("", "", "");
-
-        System.out.println(park1.ferrisWheel.getFerrisWheelDescription());
-
 
     }
 

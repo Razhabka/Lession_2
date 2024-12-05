@@ -1,7 +1,7 @@
 public class Park {
-    private String name;
-    private String address;
-    private String parkWorkTime;
+    private String name; // Названия парка аттракционов
+    private String address; // Адрес парка
+    private String parkWorkTime; // Время работы
 
     FerrisWheel ferrisWheel;
     ShootingGallery shootingGallery;
@@ -10,14 +10,15 @@ public class Park {
         this.name = name;
         this.address = address;
         this.parkWorkTime = parkWorkTime;
-        this.ferrisWheel = new FerrisWheel();
-        this.shootingGallery = new ShootingGallery();
+        ferrisWheel = new FerrisWheel();
+        shootingGallery = new ShootingGallery();
     }
 
+
     public class FerrisWheel{
-        private String ferrisWheelWorkTime = "8:00AM - 5:00PM";
-        private String ferrisWheelDescription = "A mechanical attraction in the form of a large vertically mounted wheel, with passenger cabins attached to the rim. Ferris wheels are available in many amusement parks and other places.Ы";
-        private String ferrisWheelPrice = "5$";
+        private String ferrisWheelWorkTime;
+        private String ferrisWheelDescription;
+        private String ferrisWheelPrice;
 
 
 
@@ -32,12 +33,24 @@ public class Park {
         public String getFerrisWheelPrice() {
             return ferrisWheelPrice;
         }
+
+        public void setFerrisWheelWorkTime(String ferrisWheelWorkTime) {
+            this.ferrisWheelWorkTime = ferrisWheelWorkTime;
+        }
+
+        public void setFerrisWheelDescription(String ferrisWheelDescription) {
+            this.ferrisWheelDescription = ferrisWheelDescription;
+        }
+
+        public void setFerrisWheelPrice(String ferrisWheelPrice) {
+            this.ferrisWheelPrice = ferrisWheelPrice;
+        }
     }
 
     public class ShootingGallery{
-        private String shootingGalleryWorkTime = "8:00AM - 5:00PM";
-        private String shootingGalleryDescription = "The most popular entertainment among adults and children visiting our amusement park is shooting range.";
-        private String shootingGalleryPrice = "10$";
+        private String shootingGalleryWorkTime;// Время работы аттракциона
+        private String shootingGalleryDescription; // Описание аттракциона
+        private String shootingGalleryPrice; // Цена аттракциона
 
         public String getShootingGalleryWorkTime() {
             return shootingGalleryWorkTime;
@@ -50,8 +63,29 @@ public class Park {
         public String getShootingGalleryPrice() {
             return shootingGalleryPrice;
         }
+
+        public void setShootingGalleryWorkTime(String shootingGalleryWorkTime) {
+            this.shootingGalleryWorkTime = shootingGalleryWorkTime;
+        }
+
+        public void setShootingGalleryDescription(String shootingGalleryDescription) {
+            this.shootingGalleryDescription = shootingGalleryDescription;
+        }
+
+        public void setShootingGalleryPrice(String shootingGalleryPrice) {
+            this.shootingGalleryPrice = shootingGalleryPrice;
+        }
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public String getAddress() {
+        return address;
+    }
 
+    public String getParkWorkTime() {
+        return parkWorkTime;
+    }
 }
