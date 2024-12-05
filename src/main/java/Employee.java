@@ -10,8 +10,8 @@ public class Employee {
     private int age;
 
     public Employee(String lastName, String firstName, String surname, String position, String email, long phoneNumber, int salary, int age) {
-        this.firstName = firstName;
         this.lastName = lastName;
+        this.firstName = firstName;
         this.surname = surname;
         this.position = position;
         this.email = email;
